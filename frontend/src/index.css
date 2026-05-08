@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: transparent;
+    font-family: 'Courier New', monospace;
+    -webkit-font-smoothing: none;
+    image-rendering: pixelated;
+  }
+  * {
+    image-rendering: pixelated;
+  }
+}
+
+.pixel-shadow {
+  filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.8));
+}
+
+.pixel-panel {
+  background: rgba(20, 20, 20, 0.95);
+  border: 2px solid #00FF41;
+  box-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+  backdrop-filter: blur(4px);
+}
